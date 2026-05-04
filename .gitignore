@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+credentials.json
+token.json
+*.secret.json
+secrets/
+logs/**/*.lock
+logs/**/*.log
+data/article_ledger.json
+outputs/pending_drive/*.json

@@ -1,0 +1,19 @@
+genres:
+  - id: "01"
+    key: "ai_agents_automation_logs"
+    folder_name: "01_AIエージェント_自動化_実験ログ"
+    description: "Codex、MCP、AIエージェント、自動化、実験ログ"
+    priority: 1
+    default_price_range_jpy: [980, 2980]
+  - id: "02"
+    key: "google_workspace_efficiency"
+    folder_name: "02_個人事業_中小企業_GoogleWorkspace効率化"
+    description: "Google Workspace、個人事業、中小企業の業務効率化"
+    priority: 2
+    default_price_range_jpy: [500, 1980]
+  - id: "03"
+    key: "youtube_research_content_design"
+    folder_name: "03_YouTubeリサーチ_発信コンテンツ設計"
+    description: "YouTube需要調査、発信設計、note記事化"
+    priority: 3
+    default_price_range_jpy: [980, 2480]

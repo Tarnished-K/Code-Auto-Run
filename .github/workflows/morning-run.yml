@@ -1,0 +1,27 @@
+name: Morning Article Stock Dry Run
+
+on:
+  schedule:
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Run tests
+        run: python -m pytest
+      - name: Run pipeline
+        env:
+          CODE_AUTO_RUN_DRY_RUN: "true"
+          CODE_AUTO_RUN_USE_AI: "false"
+          OPENAI_MODEL: "gpt-5.5"
+        run: python -m src.run_pipeline

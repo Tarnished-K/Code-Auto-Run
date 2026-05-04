@@ -1,0 +1,16 @@
+[project]
+name = "code-auto-run"
+version = "0.1.0"
+description = "note向けGoogle Docs記事在庫の自律生成MVP"
+requires-python = ">=3.11"
+dependencies = [
+  "tzdata>=2025.2",
+  "google-api-python-client>=2.170.0",
+  "google-auth-httplib2>=0.2.0",
+  "google-auth-oauthlib>=1.2.0",
+  "openai>=2.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

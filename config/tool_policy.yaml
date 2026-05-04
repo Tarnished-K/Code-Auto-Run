@@ -1,0 +1,29 @@
+tool_auto_add:
+  enabled: true
+  default_decision: "evaluate_then_add_if_safe"
+  minimum_score_for_auto_add: 85
+  minimum_score_for_candidate: 70
+  allowed_categories:
+    - "codex_skill"
+    - "codex_plugin"
+    - "mcp_server"
+    - "python_package"
+    - "npm_package"
+    - "github_action"
+    - "google_api_client"
+  trusted_sources:
+    - "OpenAI official docs"
+    - "Google official docs"
+    - "GitHub official docs"
+    - "BrowserMCP official docs"
+    - "well maintained open source repositories"
+  disallowed_categories:
+    - "unofficial_note_api"
+    - "cookie_extractor"
+    - "captcha_bypass"
+    - "session_hijacking"
+    - "youtube_transcript_scraper_unofficial"
+    - "spam_automation_tool"
+  require_log: true
+  require_tests: true
+  require_rollback_instructions: true

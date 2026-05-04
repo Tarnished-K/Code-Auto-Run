@@ -1,0 +1,7 @@
+article_quality:
+  minimum_stock_score: 80
+  minimum_review_score: 65
+  required_markers:
+    free_start: "【無料部分ここから】"
+    paid_line: "【NOTE有料ライン候補：この段落の直後に有料ラインを設定】"
+    paid_start: "【有料部分ここから】"

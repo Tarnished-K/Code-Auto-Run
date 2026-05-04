@@ -1,0 +1,25 @@
+youtube_research:
+  enabled: true
+  api_provider: "youtube_data_api"
+  region_code: "JP"
+  relevance_language: "ja"
+  order: "viewCount"
+  max_results_per_query: 10
+  max_videos_per_article: 8
+  exclude_shorts: true
+  min_duration_seconds: 240
+  max_duration_seconds: 7200
+  published_after_months: 24
+  use_comments: true
+  max_comments_per_video: 20
+  transcript_policy:
+    use_transcripts: "only_when_legally_and_technically_allowed"
+    store_full_transcript: false
+    store_short_notes_only: true
+    max_quote_chars_per_video: 120
+  banned_video_signals:
+    - "必ず稼げる"
+    - "誰でも月収"
+    - "放置で"
+    - "絶対成功"
+    - "裏技"

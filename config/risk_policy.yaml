@@ -1,0 +1,25 @@
+risk_levels:
+  low:
+    auto_stock_allowed: true
+    examples:
+      - "自分の作業ログ"
+      - "プロンプト集"
+      - "Google Docsテンプレート"
+      - "AIエージェント実験ログ"
+  medium:
+    auto_stock_allowed: true
+    requires_extra_check: true
+    examples:
+      - "副業ノウハウ"
+      - "業務効率化"
+      - "YouTube発信設計"
+  high:
+    auto_stock_allowed: false
+    status: "needs_review"
+    examples:
+      - "法律"
+      - "税金"
+      - "投資"
+      - "医療"
+      - "薬機法"
+      - "規約解釈の断定"

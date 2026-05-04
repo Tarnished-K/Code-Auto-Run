@@ -1,0 +1,10 @@
+google_drive:
+  dry_run: true
+  root_folder_name: "note記事ストック_自律生成"
+  credentials_path: "secrets/google_oauth_client.json"
+  token_path: "secrets/google_oauth_token.json"
+  scopes:
+    - "https://www.googleapis.com/auth/drive.file"
+    - "https://www.googleapis.com/auth/documents"
+  credentials_path_env: "GOOGLE_APPLICATION_CREDENTIALS"
+  token_path_env: "GOOGLE_OAUTH_TOKEN_PATH"

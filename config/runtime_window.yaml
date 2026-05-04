@@ -1,0 +1,9 @@
+runtime_window:
+  timezone: "Asia/Tokyo"
+  start: "04:00"
+  end: "07:00"
+  hard_stop_new_tasks: "06:50"
+  max_articles_per_run: 1
+  allow_manual_run_outside_window: false
+  require_lock: true
+  duplicate_policy: "skip_if_same_title_or_source"
